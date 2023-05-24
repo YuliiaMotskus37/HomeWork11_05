@@ -1,0 +1,19 @@
+public class HomeWork11_05 {
+    public static void main(String[] args) {
+        MonthLength(31);
+        //MonthLength( 30);
+        MonthLength(28);
+        
+    }
+    private  enum NumberOfDaysInMounth {
+        DECEMBER, JANUARY, FEBRUARY, MARCH, APRIL, MAY, JUNE, JULY, AUGUST, SEPTEMBER, OCTOBER, NOVEMBER;
+    }
+    public static void MonthLength( int dayInMount){
+    switch (dayInMount){
+        case 31-> System.out.println("JANUARY, MARCH, MAY, JULY, AUGUST, OCTOBER and DECEMBER have 31 days");
+        case 30-> System.out.println("APRIL, JUNE, SEPTEMBER and NOVEMBER  have 30 days");
+        case 28-> System.out.println("FEBRUARY have 28 days");
+    }
+    }
+    
+}
